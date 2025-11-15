@@ -1,0 +1,378 @@
+@charset "utf-8";
+/* CSS Document */
+
+html { 
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: "Gelasio", serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+    background: #f8f9fa;
+} 
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.navbar-nav .nav-link {
+    padding: 8px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ecf0f1 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 100px 0 80px;
+    margin-top: 76px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Main Content */
+.main-content {
+    padding: 60px 0;
+}
+
+.about-writer {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    border-left: 4px solid #667eea;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+/* Featured Works */
+.featured-works {
+    margin-top: 3rem;
+}
+
+.work-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+}
+
+.work-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.work-card h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Wiki Link Styles */
+.wiki-link {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.wiki-link:hover {
+    color: #667eea;
+    background-color: #f8f9fa;
+    text-decoration: none;
+    border-bottom: 2px solid #2c3e50;
+}
+
+.work-link {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.work-link:hover {
+    color: #667eea;
+    text-decoration: none;
+}
+
+/* Image link hover effects */
+.about-image a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.about-image a:hover {
+    transform: scale(1.02);
+}
+
+.work-card a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.work-card a:hover img {
+    transform: scale(1.05);
+}
+
+/* Sidebar */
+.sidebar {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Fixed Facts List */
+.facts-list {
+    margin-bottom: 2rem;
+}
+
+.fact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #ecf0f1;
+    gap: 1rem;
+}
+
+.fact-item:last-child {
+    border-bottom: none;
+}
+
+.fact-label {
+    font-weight: bold;
+    color: #2c3e50;
+    min-width: 120px;
+    flex-shrink: 0;
+}
+
+.fact-value {
+    color: #555;
+    text-align: right;
+    flex: 1;
+}
+
+/* Timeline */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.timeline-item .year {
+    background: #667eea;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 1rem;
+    min-width: 60px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.timeline-item .event {
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer h3 {
+    color: #ecf0f1;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.footer a {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #34495e;
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .about-writer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+    
+    .fact-item {
+        flex-direction: column;
+        gap: 0.3rem;
+        align-items: flex-start;
+    }
+    
+    .fact-label, .fact-value {
+        text-align: left;
+        min-width: auto;
+    }
+    
+    .hero-section {
+        padding: 80px 0 50px;
+    }
+    
+    .main-content {
+        padding: 40px 0;
+    }
+    
+    .hero-image {
+        height: 250px;
+    }
+}
+
+/* Search Form */
+.form-inline input[type="search"] {
+    border-radius: 20px;
+    border: 1px solid #bdc3c7;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.form-inline button {
+    border-radius: 20px;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Headings */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+/* Hero Section Image Size Fix */
+.hero-image {
+    width: 100%;
+    max-width: 400px; /* Уменьшил максимальную ширину */
+    height: 250px; /* Уменьшил высоту */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    margin: 0 auto; /* Центрирование */
+    display: block;
+}
+
+/* Для мобильных устройств сделаем еще меньше */
+@media (max-width: 768px) {
+    .hero-image {
+        max-width: 300px;
+        height: 200px;
+        margin-top: 20px;
+    }
+}
